@@ -33,31 +33,31 @@ This project aims to predict 30-day hospital readmissions using the UCI Diabetes
 hospital-readmission-prediction/
 │
 ├── data/
-│   ├── raw/                # Original datasets (not committed if large)
-│   ├── processed/          # Cleaned/encoded data
+│   ├── raw/                    # Binger - original datasets
+│   ├── processed/              # Binger - cleaned data
 │   └── README.md
 │
 ├── notebooks/
-│   ├── 01_eda.ipynb        # Student A – data cleaning, EDA
-│   ├── 02_modeling.ipynb   # Student B – baseline & advanced models
-│   ├── 03_explainability.ipynb  # Student C – SHAP/LIME
+│   ├── 01_eda.ipynb             # Binger – data cleaning, EDA
+│   ├── 02_modeling.ipynb        # Savina – baseline & advanced models
+│   ├── 03_explainability.ipynb  # Yansong – SHAP/LIME
 │   └── README.md
 │
 ├── src/
-│   ├── data_preprocessing.py
-│   ├── model_training.py
-│   ├── model_evaluation.py
-│   └── explainability.py
+│   ├── data_preprocessing.py  # Binger
+│   ├── model_training.py      # Savina
+│   ├── model_evaluation.py    # Savina
+│   └── explainability.py      # Yansong
 │
 ├── results/
-│   ├── figures/            # ROC, PR, SHAP plots
-│   ├── metrics/            # Model comparison CSVs
-│   └── reports/            # Final report drafts
+│   ├── figures/            # Shared (ROC, PR, SHAP plots etc.)
+│   ├── metrics/            # Savina - model results
+│   └── reports/            # Yansong - draft PDFs
 │
 ├── docs/
-│   ├── proposal/           # IEEE proposal (Nov 13)
-│   ├── final_report/       # Final report (Dec 4)
-│   └── presentation/       # Slides
+│   ├── proposal/           # Yansong - IEEE 3-apge proposal (Nov 13)
+│   ├── final_report/       # All - final report (Dec 4)
+│   └── presentation/       # All - slides for presentation
 │
 ├── requirements.txt
 ├── README.md
