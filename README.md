@@ -15,7 +15,7 @@ This project aims to predict 30-day hospital readmissions using the UCI Diabetes
 
 | **Member** | **Main Writing Tasks** | **Supporting Tasks** |
 |:--|:--|:--|
-| **Binger** | Write **Section 3.A (Data Sources)** and **3.B (Data Preprocessing)**.<br>Provide dataset summary and feature overview. <br>Write **Timeline & Roles** section.| Contribute EDA figures (class distribution, missing-value map). <br>Create, Compile and edit full proposal in Overleaf.|
+| **Binger** | Write **Section 3.A (Data Sources)** and **3.B (Data Preprocessing)**.<br>Provide dataset summary and feature overview. <br>Write **Timeline & Roles** section. <br>Create, Compile and edit full proposal in Overleaf.| Contribute EDA figures (class distribution, missing-value map). |
 | **Savina** | Write **Section 3.C (Modeling Approach)** and **3.D (Evaluation Metrics)**.<br>Draft baseline modeling descriptions. | Review Abstract & Expected Results for technical clarity. |
 | **Yansong** | Write **Abstract, Introduction, Related Work, Expected Results** sections. | Insert SHAP/LIME visuals (concept diagrams) and ensure citation formatting. |
 
