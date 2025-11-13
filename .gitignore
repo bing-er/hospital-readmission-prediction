@@ -5,4 +5,8 @@ __pycache__/
 **/.DS_Store
 =======
 .DS_Store.idea
+<<<<<<< HEAD
 >>>>>>> 2cfd065 (Add cleaned dataset and modeling/explainability notebooks)
+=======
+.idea/
+>>>>>>> 51f775f (Update gitignore to ignore .DS_Store everywhere)
