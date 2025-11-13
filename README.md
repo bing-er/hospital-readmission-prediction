@@ -34,14 +34,12 @@ hospital-readmission-prediction/
 │
 ├── data/
 │   ├── raw/                    # Binger - original datasets
-│   ├── processed/              # Binger - cleaned data
-│   └── README.md
+│   └── processed/              # Binger - cleaned data
 │
 ├── notebooks/
 │   ├── 01_eda.ipynb             # Binger – data cleaning, EDA
 │   ├── 02_modeling.ipynb        # Savina – baseline & advanced models
-│   ├── 03_explainability.ipynb  # Yansong – SHAP/LIME
-│   └── README.md
+│   └── 03_explainability.ipynb  # Yansong – SHAP/LIME
 │
 ├── src/
 │   ├── data_preprocessing.py  # Binger
