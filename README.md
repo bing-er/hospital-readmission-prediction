@@ -15,9 +15,9 @@ This project aims to predict 30-day hospital readmissions using the UCI Diabetes
 
 | **Member** | **Main Writing Tasks** | **Supporting Tasks** |
 |:--|:--|:--|
-| **Binger** | Write Sections 4 (Dataset Description) and 5 (Readmission Class Distribution, Feature Relationships, and Correlation and Trends); provide dataset summary, feature overview and figures; write Team Plan and Timeline; create, compile and format the final proposal in Overleaf.| Contribute EDA figures (class distribution, missing-value map). |
-| **Savina** | Assist with refining analysis in Section 5; review EDA findings for statistical validity; contribute to discussion of model preparation and expected results | Review Abstract & Expected Results for technical clarity. |
-| **Yansong** | Write Sections 1–3 (Abstract, Introduction, Related Work). | Insert SHAP/LIME visuals (concept diagrams) and ensure citation formatting. |
+| **Binger** | Write Sections Keywords, 3 (Dataset Description) and 5 (Team Plan and Timeline); provide dataset summary, feature overview and figures | Create, compile and format the final proposal in Overleaf.|
+| **Savina** | Write Section 4 (Exploratory Data Analysis); review EDA findings for statistical validity; contribute to discussion of model preparation and expected results. | Review Abstract & Expected Results for technical clarity. |
+| **Yansong** | Write Sections 0–3 (Abstract, Introduction, Related Work). | Insert SHAP/LIME visuals (concept diagrams) and ensure citation formatting. |
 
 
 ## Project Timeline
