@@ -20,9 +20,13 @@ import pandas as pd
 
 
 # --------------------------------------------------------------------
-# Paths (edit these if your structure is different)
+# Paths (Corrected for robust execution)
 # --------------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[1]  # go up from src/
+# Define the root as the parent directory of the script's location
+SCRIPT_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = SCRIPT_DIR.parent
+
+# Use the project root to define relative paths for data files
 RAW_DATA_PATH = PROJECT_ROOT / "data" / "raw" / "diabetic_data.csv"
 PROCESSED_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "diabetes_cleaned.csv"
 
@@ -55,7 +59,12 @@ def age_to_midpoint(value: str) -> float | np.nan:
 def load_raw_data(path: Path = RAW_DATA_PATH) -> pd.DataFrame:
     """Load the raw UCI diabetes dataset."""
     if not path.exists():
-        raise FileNotFoundError(f"Raw data file not found: {path}")
+        # Fallback to current directory if structured path fails
+        local_path = Path("diabetic_data.csv")
+        if local_path.exists():
+             path = local_path
+        else:
+             raise FileNotFoundError(f"Raw data file not found at expected location: {path}")
 
     df = pd.read_csv(path)
     print(f"[load_raw_data] Loaded raw data with shape: {df.shape}")
@@ -72,8 +81,8 @@ def clean_diabetes_data(df: pd.DataFrame) -> pd.DataFrame:
         "weight",
         "payer_code",
         "medical_specialty",
-        "A1Cresult",        # <- add this
-        "max_glu_serum",    # <- and this
+        "A1Cresult",        # Dropped for sparsity
+        "max_glu_serum",    # Dropped for sparsity
         "encounter_id",
         "patient_nbr",
     ]
