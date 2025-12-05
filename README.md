@@ -4,11 +4,11 @@ This project aims to predict 30-day hospital readmissions using the UCI Diabetes
 
 ## 👥 Team Members and Roles
 
-| **Member** | **Role** | **Responsibilities** |
-|:--|:--|:--|
-| **Binger** | Data Engineer / Preprocessing Lead | - Acquire and preprocess UCI Diabetes dataset.<br>- Handle missing values, encoding, and normalization.<br>- Perform exploratory data analysis (EDA) with descriptive statistics and visualizations. |
-| **Savina** | Modeling & Evaluation Lead | - Implement baseline models (Logistic Regression, Random Forest).<br>- Tune and train advanced models (XGBoost, LightGBM).<br>- Evaluate models using AUC, F1, and calibration plots. |
-| **Yansong** | Explainability & Reporting Lead | - Apply SHAP/LIME to interpret feature importance.<br>- Conduct fairness analysis across demographics.<br>- Prepare all visualizations, report sections, and final presentation slides. |
+| **Member** | **Role** | **Responsibilities**                                                                                                                                                                                                                         |
+|:--|:--|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Binger** | Data Engineer / Preprocessing Lead | - Acquire and preprocess UCI Diabetes dataset.<br>- Handle missing values, encoding, and normalization.<br>- Perform exploratory data analysis (EDA) with descriptive statistics and visualizations.<br>- Prepare final presentation slides. |
+| **Savina** | Modeling & Evaluation Lead | - Implement baseline models (Logistic Regression, Random Forest).<br>- Tune and train advanced models (XGBoost, LightGBM).<br>- Evaluate models using AUC, F1, and calibration plots.<br>                                                    |
+| **Yansong** | Explainability & Reporting Lead | - Apply SHAP/LIME to interpret feature importance.<br>- Conduct fairness analysis across demographics.<br>- Prepare report sections, and final presentation slides.                                                                          |
 
 
 ## 📝 Team Task Assignment for Proposal
@@ -18,6 +18,15 @@ This project aims to predict 30-day hospital readmissions using the UCI Diabetes
 | **Binger** | Write Sections Keywords, 3 (Dataset Description) and 5 (Team Plan and Timeline); provide dataset summary, feature overview and figures | Create, compile and format the final proposal in Overleaf.|
 | **Savina** | Write Section 4 (Exploratory Data Analysis); review EDA findings for statistical validity; contribute to discussion of model preparation and expected results. | Review Abstract & Expected Results for technical clarity. |
 | **Yansong** | Write Sections 0–3 (Abstract, Introduction, Related Work). | Insert SHAP/LIME visuals (concept diagrams) and ensure citation formatting. |
+
+
+## 📝 Team Task Assignment for Final Paper
+
+| **Member** | **Main Writing Tasks**                                                                                                                                     | **Supporting Tasks**                                                        |
+|:--|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
+| **Binger** | Write Sections 3 (Dataset) and 4 (Methodology)                                                                                                             | Create, compile and format the final report in Overleaf.                    |
+| **Savina** | Write Section 5 (Experiments)                                                                                                                              | Review Abstract & Expected Results for technical clarity.                   |
+| **Yansong** | Write Sections Abstract, 1 (Introduction), 2 (Related Work), 6 (Results and Discussion), 7 (Conclusion), 8 (Ruture Work)                                   | Insert SHAP/LIME visuals (concept diagrams) and ensure citation formatting. |
 
 
 ## Project Timeline
@@ -33,31 +42,30 @@ This project aims to predict 30-day hospital readmissions using the UCI Diabetes
 hospital-readmission-prediction/
 │
 ├── data/
-│   ├── raw/                    # Binger - original datasets
-│   └── processed/              # Binger - cleaned data
-│
-├── notebooks/
-│   ├── 01_eda.ipynb             # Binger – data cleaning, EDA
-│   ├── 02_modeling.ipynb        # Savina – baseline & advanced models
-│   └── 03_explainability.ipynb  # Yansong – SHAP/LIME
-│
-├── src/
-│   ├── data_preprocessing.py  # Binger
-│   ├── model_training.py      # Savina
-│   ├── model_evaluation.py    # Savina
-│   └── explainability.py      # Yansong
-│
-├── results/
-│   ├── figures/            # Shared (ROC, PR, SHAP plots etc.)
-│   ├── metrics/            # Savina - model results
-│   └── reports/            # Yansong - draft PDFs
+│   ├── processed/               # Binger - cleaned data  
+│   └── row/                     # Binger - original datasets
 │
 ├── docs/
-│   ├── proposal/           # Yansong - IEEE 3-apge proposal (Nov 13)
-│   ├── final_report/       # All - final report (Dec 4)
-│   └── presentation/       # All - slides for presentation
+│   ├── final_report/            # All - final report (Dec 4)
+│   ├── presentation/            # All - slides for presentation
+│   ├── proposal/                # All - proposal (Nov 13)
 │
-├── requirements.txt
-├── README.md
+├── notebooks/
+│   ├── 01_eda_proposal.ipynb    # Binger – data cleaning, EDA
+│   └── 01_eda_final.ipynb       # Binger – EDA for final report
+│
+├── results/
+│   └── figures/                 # Binger - figures for Dataset and EDA sections
+│       ├── figure_3_1_distributions.png                
+│       ├── figure_3_2_readmission_by_stay.png       
+│       ├── figure_3_3_age_trends.png    
+│       ├── figure_3_4_correlation_heatmap.png    
+│       └── figure_3_5_feature_counts.png           
+│
+├── src/
+│   └── data_preprocessing.py    # Binger - Python code for data cleaning
+│
 ├── .gitignore
-└── LICENSE
+├── LICENSE
+├── README.md
+└── requirements.txt
