@@ -1,6 +1,13 @@
-# 🏥 Predicting Hospital Readmission Risk Using Explainable Machine Learning on Public Health Data
-## Overview
-This project aims to predict 30-day hospital readmissions using the UCI Diabetes 130-Hospital dataset. We compare traditional ML models (Logistic Regression, Random Forest) and ensemble models (XGBoost) with explainability tools such as SHAP and LIME.
+<div align="center">
+
+# 🏥 Predicting Hospital Readmission Risk<br>Using Explainable Machine Learning on Public Health Data
+
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
+[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow.svg)]()
+
+</div>
+
 
 ## 👥 Team Members and Roles
 
@@ -11,34 +18,12 @@ This project aims to predict 30-day hospital readmissions using the UCI Diabetes
 | **Yansong** | Explainability & Reporting Lead | - Apply SHAP/LIME to interpret feature importance.<br>- Conduct fairness analysis across demographics.<br>- Prepare report sections, and final presentation slides.                                                                          |
 
 
-## 📝 Team Task Assignment for Proposal
-
-| **Member** | **Main Writing Tasks** | **Supporting Tasks** |
-|:--|:--|:--|
-| **Binger** | Write Sections Keywords, 3 (Dataset Description) and 5 (Team Plan and Timeline); provide dataset summary, feature overview and figures | Create, compile and format the final proposal in Overleaf.|
-| **Savina** | Write Section 4 (Exploratory Data Analysis); review EDA findings for statistical validity; contribute to discussion of model preparation and expected results. | Review Abstract & Expected Results for technical clarity. |
-| **Yansong** | Write Sections 0–3 (Abstract, Introduction, Related Work). | Insert SHAP/LIME visuals (concept diagrams) and ensure citation formatting. |
+## Project Overview
+This project aims to predict 30-day hospital readmissions using the UCI Diabetes 130-Hospital dataset. We compare traditional ML models (Logistic Regression, Random Forest) and ensemble models (XGBoost) with explainability tools such as SHAP and LIME.
 
 
-## 📝 Team Task Assignment for Final Paper
-
-| **Member** | **Main Writing Tasks**                                                                                                                                     | **Supporting Tasks**                                                        |
-|:--|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
-| **Binger** | Write Sections 3 (Dataset) and 4 (Methodology)                                                                                                             | Create, compile and format the final report in Overleaf.                    |
-| **Savina** | Write Section 5 (Experiments)                                                                                                                              | Review Abstract & Expected Results for technical clarity.                   |
-| **Yansong** | Write Sections Abstract, 1 (Introduction), 2 (Related Work), 6 (Results and Discussion), 7 (Conclusion), 8 (Ruture Work)                                   | Insert SHAP/LIME visuals (concept diagrams) and ensure citation formatting. |
-
-
-## Project Timeline
-| Phase | Dates | Deliverables |
-|:--|:--|:--|
-| Proposal | Nov 1 – Nov 13 | 3-page IEEE-style proposal |
-| Modeling | Nov 14 – Nov 27 | Baseline & advanced models |
-| Final Report | Nov 28 – Dec 4 | Full report + presentation |
-
-
-## Folder Structure
-```text
+## 🗂️ Repository Structure
+```
 hospital-readmission-prediction/
 │
 ├── data/
@@ -69,3 +54,80 @@ hospital-readmission-prediction/
 ├── LICENSE
 ├── README.md
 └── requirements.txt
+```
+
+
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/bing-er/hospital-readmission-prediction.git
+cd pathfinding-iptimization
+```
+
+### 2. Set Up Environment
+```
+python3 -m venv venv
+source venv/bin/activate        # (Mac/Linux)
+venv\Scripts\activate           # (Windows)
+pip install -r requirements.txt
+```
+
+### 3. Run Algorithms
+Run individual algorithms:
+```
+python src/data_preprocessing.py
+```
+
+## 📝 Team Task Assignment for Proposal
+
+| **Member** | **Main Writing Tasks** | **Supporting Tasks** |
+|:--|:--|:--|
+| **Binger** | Write Sections Keywords, 3 (Dataset Description) and 5 (Team Plan and Timeline); provide dataset summary, feature overview and figures | Create, compile and format the final proposal in Overleaf.|
+| **Savina** | Write Section 4 (Exploratory Data Analysis); review EDA findings for statistical validity; contribute to discussion of model preparation and expected results. | Review Abstract & Expected Results for technical clarity. |
+| **Yansong** | Write Sections 0–3 (Abstract, Introduction, Related Work). | Insert SHAP/LIME visuals (concept diagrams) and ensure citation formatting. |
+
+
+## 📝 Team Task Assignment for Final Paper
+
+| **Member** | **Main Writing Tasks**                                                                                                                                     | **Supporting Tasks**                                                        |
+|:--|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------|
+| **Binger** | Write Sections 3 (Dataset) and 4 (Methodology)                                                                                                             | Create, compile and format the final report in Overleaf.                    |
+| **Savina** | Write Section 5 (Experiments)                                                                                                                              | Review Abstract & Expected Results for technical clarity.                   |
+| **Yansong** | Write Sections Abstract, 1 (Introduction), 2 (Related Work), 6 (Results and Discussion), 7 (Conclusion), 8 (Ruture Work)                                   | Insert SHAP/LIME visuals (concept diagrams) and ensure citation formatting. |
+
+
+## Project Timeline
+| Phase | Dates | Deliverables |
+|:--|:--|:--|
+| Proposal | Nov 1 – Nov 13 | 3-page IEEE-style proposal |
+| Modeling | Nov 14 – Nov 27 | Baseline & advanced models |
+| Final Report | Nov 28 – Dec 4 | Full report + presentation |
+
+
+## 📊 Additional Visualization
+
+<img width="600" alt="RuntimeComparison" src="results/figures/fig2_distribution.png">
+
+<img width="600" alt="RuntimeComparison" src="results/figures/figure_3_1_distributions.png">
+
+<img width="600" alt="RuntimeComparison" src="results/figures/figure_3_2_readmission_by_stay.png">
+
+<img width="600" alt="RuntimeComparison" src="results/figures/figure_3_3_age_trends.png">
+
+<img width="600" alt="RuntimeComparison" src="results/figures/figure_3_4_correlation_heatmap.png">
+
+<img width="600" alt="RuntimeComparison" src="results/figures/figure_3_5_feature_counts.png">
+
+<img width="600" alt="RuntimeComparison" src="results/figures/figure_6_1_ROC_curves.png">
+
+<img width="600" alt="RuntimeComparison" src="results/figures/figure_6_2_Calibration.png">
+
+<img width="600" alt="RuntimeComparison" src="results/figures/figure_6_3_Shap.png">
+
+
+## 📜 License
+
+This project is developed for **educational purposes** under the **BCIT COMP 9060 – Applied Algorithm Analysis** course.  
+Licensed under the [MIT License](LICENSE).
