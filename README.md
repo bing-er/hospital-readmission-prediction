@@ -108,8 +108,6 @@ python src/data_preprocessing.py
 
 ## 📊 Additional Visualization
 
-<img width="600" alt="RuntimeComparison" src="results/figures/fig2_distribution.png">
-
 <img width="600" alt="RuntimeComparison" src="results/figures/figure_3_1_distributions.png">
 
 <img width="600" alt="RuntimeComparison" src="results/figures/figure_3_2_readmission_by_stay.png">
